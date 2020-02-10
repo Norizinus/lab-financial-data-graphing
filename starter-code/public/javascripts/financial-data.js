@@ -6,7 +6,9 @@ window.onload = function() {
   let date = new Date();
   let today = date.toISOString().substr(0, 10);
   fromDate.value = today;
+  fromDate.max = today;
   toDate.value = today;
+  toDate.max = today;
 };
 
 axios
